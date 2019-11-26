@@ -1,0 +1,613 @@
+/* @import url('https://fonts.googleapis.com/css?family=Prompt&display=swap'); */
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker|Prompt|Courgette&display=swap');
+
+body {
+  background-color: #18152C;
+  background-image: linear-gradient(rgb(2, 3, 46), rgb(144, 2, 138));
+  background-attachment: fixed;
+  color: grey;
+  /* margin: 0; */
+}
+
+.App{
+  /* display: flex; */
+  /* position: relative; */
+  /* clear: both; */
+  width: 100%;
+  /* overflow:auto; */
+  font-family: 'Prompt';
+  /* scrollbar-width: thin; */
+  color: white;
+}
+
+h3{
+  color: #44C5E5;
+}
+
+
+.image-container {
+  display: flex;
+  justify-content: center;
+}
+
+#blog-text{
+  text-align: left;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 50px;
+}
+
+.iframe{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.quote-div{
+  /* text-align: right; */
+  /* position: relative; */
+  /* float: center; */
+  /* width: 50%; */
+  /* margin-left: auto;
+  margin-right: auto; */
+  
+  position: relative;
+  float: left;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
+#quote{
+  font-size: 30px;
+  margin-right: auto;
+  margin-right: auto;
+  /* margin-top: 30%; */
+  width: 100%;
+  text-align: center;
+  font-family: 'Courgette';
+  padding-bottom: 20px;
+  padding-top: 150px;
+}
+
+#link{
+  text-decoration: none;
+  color: white
+}
+
+
+.modal{
+  color: black;
+  font-size: 12px;
+}
+
+.planet-button{
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+    vertical-align: middle;
+}
+
+#sun{
+  animation: MoveUpDown 7s linear infinite;
+  position: relative;
+  left: 0;
+  bottom: 0
+}
+@keyframes MoveUpDown{
+  0%, 100% {
+    bottom: -5px;
+  }
+  50%{
+    bottom: 5px
+  }
+}
+
+#mercury{
+  animation: MoveUpDownM 8s linear infinite;
+  position: relative;
+  left: 0;
+  bottom: 0
+}
+@keyframes MoveUpDownM{
+  0%, 100% {
+    bottom: -10px;
+  }
+  50%{
+    bottom: 10px
+  }
+}
+
+
+#venus{
+  animation: MoveUpDownV 5s linear infinite;
+  position: relative;
+  left: 0;
+  bottom: 0
+}
+@keyframes MoveUpDownV{
+  0%, 100% {
+    bottom: -15px;
+  }
+  50%{
+    bottom: 15px
+  }
+}
+
+#earth{
+  animation: MoveUpDownE 4s linear infinite;
+  position: relative;
+  left: 0;
+  bottom: 0
+}
+@keyframes MoveUpDownE{
+  0%, 100% {
+    bottom: -10px;
+  }
+  50%{
+    bottom: 10px
+  }
+}
+
+#mars{
+  animation: MoveUpDownMA 3s linear infinite;
+  position: relative;
+  left: 0;
+  bottom: 0
+}
+@keyframes MoveUpDownMA{
+  0%, 100% {
+    bottom: -12px;
+  }
+  50%{
+    bottom: 12px
+  }
+}
+
+#jupiter{
+  animation: MoveUpDownJ 8s linear infinite;
+  position: relative;
+  left: 0;
+  bottom: 0
+}
+@keyframes MoveUpDownJ{
+  0%, 100% {
+    bottom: -17px;
+  }
+  50%{
+    bottom: 17px
+  }
+}
+
+#saturn{
+  animation: MoveUpDownS 10s linear infinite;
+  position: relative;
+  left: 0;
+  bottom: 0
+}
+@keyframes MoveUpDownS{
+  0%, 100% {
+    bottom: -15px;
+  }
+  50%{
+    bottom: 15px
+  }
+}
+
+#uranus{
+  animation: MoveUpDownU 15s linear infinite;
+  position: relative;
+  left: 0;
+  bottom: 0
+}
+@keyframes MoveUpDownU{
+  0%, 100% {
+    bottom: -10px;
+  }
+  50%{
+    bottom: 10px
+  }
+}
+
+#neptune{
+  animation: MoveUpDownN 9s linear infinite;
+  position: relative;
+  left: 0;
+  bottom: 0
+}
+@keyframes MoveUpDownN{
+  0%, 100% {
+    bottom: -10px;
+  }
+  50%{
+    bottom: 10px
+  }
+}
+
+#pluto{
+  animation: MoveUpDownP 5s linear infinite;
+  position: relative;
+  left: 0;
+  bottom: 0
+}
+@keyframes MoveUpDownP{
+  0%, 100% {
+    bottom: -6px;
+  }
+  50%{
+    bottom: 6px
+  }
+}
+
+
+
+
+
+.menu{
+  width: 100%;
+  /* overflow: hidden; */
+  /* position: fixed; */
+  top: 10px;
+}
+
+.logo{
+  /* transform: rotate(90deg); */
+  width: 3%;
+  /* padding-right: 10px; */
+  /* padding-left: 13px; */
+  /* height: 56px; */
+  float: left;
+  /* opacity: 0.7; */
+}
+
+.menu-items{
+  float: right;
+  /* width: 100%; */
+  
+}
+
+ul{
+  padding-right: 5px;
+}
+
+ul li{
+  display: inline;
+  padding-right: 10px;
+  color: white;
+  font-family: "Prompt";
+  font-size: 20px;
+}
+
+ul li > a:not(.activeLink):hover {
+  color: #44C5E5;
+}
+
+.active{
+  color: white
+}
+
+.inactive{
+  color: white
+}
+
+
+.main-div{
+  color: white;
+  float: center;
+  top: 100px;
+  position: relative;
+  text-align: center;
+  /* margin: 0; */
+  /* width: 100%; */
+  /* margin:auto; */
+  /* margin-left: 7%; */
+  /* margin-right: auto; */
+}
+
+/* h2{
+  font-family: 'Prompt';
+  text-align: center;
+} */
+
+.zip-form{
+  /* text-align: center; */
+  /* display: inline-block; */
+  /* float: center; */
+  margin-right: auto;
+  margin-left: auto;
+  /* position: relative; */
+  width: 100%;
+  height: 200px;
+}
+
+h4{
+  color: #44C5E5
+}
+
+.site-form{
+  /* text-align: center; */
+  /* display: inline-block; */
+  /* float: center; */
+  margin-right: auto;
+  margin-left: auto;
+  /* position: relative; */
+  width: 300px;
+  height: 300px;
+}
+
+.on-form{
+  margin: auto;
+  /* margin-right: auto; */
+}
+
+.center-form{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+input[type=text], select {
+  /* width: 100%; */
+  /* color: white; */
+  background: transparent;
+  /* opacity: 0.1; */
+  color: white;
+  font-size: 13px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid white;
+  border-radius: 10px;
+  box-sizing: border-box;
+  transition: ease-in-out, width .35s ease-in-out;
+}
+
+input[type=text]:focus, select{
+  color:white;
+}
+
+input[type=submit] {
+  /* width: 100%; */
+  font-size: 15px;
+  background-color: #44C5E5;
+  color: white;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: none;
+  /* border-radius: 4px; */
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+input[type=submit]:hover {
+  background-color: white;
+  color: #44C5E5;
+}
+
+.add{
+  font-size: 15px;
+  background-color: #44C5E5;
+  color: white;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: none;
+  /* border-radius: 4px; */
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.current-weather{
+  /* margin-top: 5%;
+  margin-bottom: 5%; */
+  /* text-align: center; */
+
+  margin: auto
+}
+
+.c-location{
+  font-size: 25px;
+  margin-bottom: 2%;
+}
+
+.c-temperature{
+  /* text-align: center; */
+  font-size: 50px;
+  margin: 0;
+}
+
+.daily{
+  /* background-color: grey; */
+  text-align: center;
+  width: 3200;
+  display: flex;
+  font-size: 13px;
+  /* border: 2px solid rgb(228, 155, 155); */
+}
+
+.day{
+  width: 300px;
+  line-height: 2;
+  /* padding: 5px;
+  border: 2px solid rgb(228, 155, 155); */
+}
+
+.d-l-temp{
+  color: #B8D2EB
+}
+
+.d-date{
+  color: #44C5E5
+}
+
+
+
+table {
+  text-align: center;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  /* border: 1px solid rgb(68, 197, 229); */
+  width: 100%;
+}
+
+#dark-sites td, #dark-sites th {
+  border: 1px solid rgb(68, 197, 229);
+  padding: 8px;
+}
+
+/*
+#watchlist tr:nth-child(even){background-color: #c54e4e;}
+
+#watchlist tr:hover {background-color: rgb(241, 143, 143);}
+*/
+
+/* #dark-sites th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: rgb(68, 197, 229);
+  color: white;
+}  */
+
+/* .c-iss-location{
+  height: 100px;
+  width: 300px;
+  margin: auto;
+} */
+
+.map{
+  /* display: flex; */
+  margin-left: auto;
+  margin-right: auto
+}
+
+
+.ISS-div{
+  color: white;
+  float: center;
+  top: 100px;
+  position: relative;
+  text-align: center;
+}
+
+.number-in-space{
+  font-size: 300px;
+  /* border-bottom: 1px solid white; */
+}
+
+#ppl{
+  margin-top: 40px;
+}
+
+.people{
+  width: 40%;
+  margin: auto;
+  line-height: 3;
+  /* text-align: center; */
+}
+
+/* #crew-row{
+  display: flex;
+} */
+
+#crew-name{
+  text-decoration: none;
+  font-size: 20px;
+  color: white
+}
+
+
+.solar-system{
+  float: left;
+  margin-left: 150px;
+  margin-top: 70px;
+  
+}
+
+
+
+
+
+/* #crew-country{
+  float: right
+} */
+
+
+
+
+/* .App {
+  text-align: center;
+} */
+
+
+/* .App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+} */
+
+/* .App-link {
+  color: #09d3ac;
+} */
+
+
+.modal {
+  font-size: 15px;
+  color: white;
+  background-color: #2B0841;
+  border: none;
+  border-radius: 10px;
+  /* background: rgba(204, 204, 204, 0.1) */
+}
+.modal > .header {
+  color: #44C5E5;
+  width: 100%;
+  /* border-bottom: 1px solid gray; */
+  font-size: 18px;
+  text-align: center;
+  padding: 5px;
+}
+.modal > .content {
+  width: 100%;
+  padding: 10px 5px;
+}
+.modal > .actions {
+  width: 100%;
+  padding: 10px 5px;
+  margin: auto;
+  text-align: center;
+}
+.modal > .close {
+  cursor: pointer;
+  position: absolute;
+  display: block;
+  padding: 2px 5px;
+  line-height: 20px;
+  right: -10px;
+  top: -10px;
+  font-size: 24px;
+  /* background: #ffffff; */
+  /* border-radius: 18px; */
+  /* border: 1px solid #cfcece; */
+}
+
+.button{
+  background-color: #44C5E5;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 10px;
+}

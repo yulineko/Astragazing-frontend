@@ -9,3 +9,4 @@ A web application that combines multiple tools to help astrophotographers to pla
 * New/better light pollution map
 * Ability to plan trips to dark sites
 * Ability to invite friends to trips
+* Create an API for all solar system objects
